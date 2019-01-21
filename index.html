@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="plugin/swiper.3.4.2.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script>
+    (function () {
+      var width = document.documentElement.clientWidth;
+      var style = document.createElement("style");
+      style.innerHTML = "html{font-size: " + width / 16 + "px !important;}";
+      document.head.appendChild(style);
+    })();
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>悦农通</h1>
+    <div class="user"><img src="images/grzx.svg" alt="" /></div>
+  </header>
+  <div id="wrapper">
+    <section>
+      <div class="swiper-container">
+        <div id="banner" class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="weather">
+        <div class="wrap">
+          <div class="left">
+            <img id="icon" src="images/CLO.svg" alt="" />
+          </div>
+          <div class="right">
+            <p>智能天气推送</p>
+            <p id="description">数据正在查询中</p>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="wrap">
+          <div class="left">
+            <div id="myFarm">我的农场</div>
+            <img src="images/dingwei2.svg" alt="" />
+          </div>
+          <div class="right">
+            <input type="text" placeholder="快捷搜索" />
+            <img src="images/ss.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <menu class="menu">
+        <div class="swiper-menu">
+          <div id="swiper_menu" class="swiper-wrapper"></div>
+        </div>
+      </menu>
+      <div id="content" class="content">
+        <div class="menu2">
+          <div data-id="new" class="left active"><span>实时数据</span></div>
+          <div data-id="old" class="right"><span>历史数据</span></div>
+        </div>
+        <div id="realTimeWrap" class="realTimeWrap">
+          <ul id="listHTML"></ul>
+        </div>
+        <div id="historyWrap" class="historyWrap">
+          <ul id="historyUl"></ul>
+          <div id="canvas" class="canvas">
+          </div>
+        </div>
+      </div>
+      <div id="table" class="table">
+
+      </div>
+      <div id="yckz" class="yckz">
+        <ul id="yckzHTML">
+        </ul>
+      </div>
+      <div id="spjk" class="spjk">
+        <ul id="spjkHTML">
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="plugin/echarts.common.min.js"></script>
+  <script src="plugin/iscroll.js"></script>
+  <script src="plugin/loaded_iscroll.js"></script>
+  <script src="plugin/swiper.3.4.2.min.js"></script>
+  <script src="plugin/mobileSelect.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
